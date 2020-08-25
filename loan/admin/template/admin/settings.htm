@@ -1,0 +1,108 @@
+ <style>
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btns {
+  border: 0px solid white;
+  color: white;
+  background-color: white;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+</style>
+ <div class="col-sm" style="padding:20px;">
+ <h4><i class="fa fa-building"></i> Business Profiles</h4>
+										<br/>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Logo</label>
+                                            <div class="col-sm-8">
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%logo%" id="logoprop" width="150px" height=""/></button>
+  <input type="file" id="logo" onchange="showprevImg('logoprop', 'logo')" />
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Business Address</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="address" value="%address%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Business Phone</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="phone" value="%phone%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Business Email</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="email" value="%email%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Business Hours</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="hours" value="%hours%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Business Description</label>
+                                            <div class="col-sm-8">
+                                                <textarea class="form-control" id="shortAbout">%shortAbout%</textarea>
+                                            </div>
+                                        </div>
+										<hr/>
+										<h4><i class="fa fa-globe"></i> Social Profiles</h4>
+										<br/>
+										<div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Facebook</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="facebook" value="%facebook%">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Twitter</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="twitter" value="%twitter%">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Instagram</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="instagram" value="%instagram%">
+                                            </div>
+                                        </div>
+                                										<hr/>
+										<h4><i class="fa fa-mobile"></i> Mobile Apps</h4>
+										<br/>
+										<div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Android App Url</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="android" value="%android%">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">IOS App Url</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="ios" value="%ios%">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+											<span id="worksheet_report"></span><br/>
+                                             <button type="button" onclick="updateSettings()" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                </div>
+							

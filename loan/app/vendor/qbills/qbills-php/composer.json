@@ -1,0 +1,20 @@
+{
+    "name": "qbills/qbills-php",
+    "description": "PHP API Wrapper for Qbills Payment HTTP/1.1",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Qbills\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Snipnet Technologies",
+            "email": "contact@snipnetworks.com"
+        }
+    ]
+}

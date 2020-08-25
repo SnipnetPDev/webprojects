@@ -1,0 +1,1 @@
+Thank you for choosing %site_name% begin your account setup %b_url%/enroll.php?v=verify&dd=%dd%&ph=%ph%

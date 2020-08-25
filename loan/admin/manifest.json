@@ -1,0 +1,10 @@
+{
+        "name": "Mayfair Admin",
+        "description": "aAdmin Panel",
+        "tempFolder": "template/",
+        "license": "MIT",
+        "author": {
+		        "name": "Snipnet Technologies",
+				"email": "contact@snipnetworks.com"
+				}
+}

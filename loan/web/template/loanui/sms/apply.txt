@@ -1,0 +1,1 @@
+HI %userName%, to check your loan status kindly download the %siteName% mobile application from your app store or using this link IOS: %appIosUrl% / Android: %appAndroidUrl%

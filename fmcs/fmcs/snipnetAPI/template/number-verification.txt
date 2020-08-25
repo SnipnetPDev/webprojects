@@ -1,0 +1,1 @@
+You have requested to add %phone_no% to your %site_name% account, follow here to verify %b_url%/verify.php?v=phone&id=%phone_no_enc%&token=%token%

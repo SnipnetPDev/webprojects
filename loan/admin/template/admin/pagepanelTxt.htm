@@ -1,0 +1,81 @@
+
+ <div class="col-sm">
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Title</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="pGtitle" value="%title%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pGdesc" class="col-sm-4 col-form-label">Description</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="pGdesc" value="%desc%">
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="display" class="col-sm-4 col-form-label">Display</label>
+                                            <div class="col-sm-8">
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%display%" id="pGdisplayImg" width="150px" height=""/></button>
+  <input type="file" id="pGdisplay" onchange="showprevImg('pGdisplayImg', 'pGdisplay')" />
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pGdesc" class="col-sm-4 col-form-label">Page Text Content</label>
+                                            <div class="col-sm-8">
+											<i style="">Tile1</i>
+                                                <input type="text" class="form-control" id="pageTxt" value="%pageTxt%">
+											<i style="">Tile2</i>
+                                                <input type="text" class="form-control" id="pageTxt2" value="%pageTxt2%">
+											<i style="">Tile3</i>
+                                                <input type="text" class="form-control" id="pageTxt3" value="%pageTxt3%">
+											<i style="">Tile4</i>
+                                                <input type="text" class="form-control" id="pageTxt4" value="%pageTxt4%">
+											<i style="">Tile5</i>
+                                                <input type="text" class="form-control" id="pageTxt5" value="%pageTxt5%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pGdesc" class="col-sm-4 col-form-label">Page Image Content</label>
+                                            <div class="col-sm-8">
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%pageImg%" id="pageDsp" width="150px" height=""/></button>
+  <input type="file" id="pageImg" onchange="showprevImg('pageDsp', 'pageImg')" />
+</div>
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%pageImg2%" id="pageDsp2" width="150px" height=""/></button>
+  <input type="file" id="pageImg2" onchange="showprevImg('pageDsp2', 'pageImg2')" />
+</div>
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%pageImg3%" id="pageDsp3" width="150px" height=""/></button>
+  <input type="file" id="pageImg3" onchange="showprevImg('pageDsp3', 'pageImg3')" />
+</div>
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%pageImg4%" id="pageDsp4" width="150px" height=""/></button>
+  <input type="file" id="pageImg4" onchange="showprevImg('pageDsp4', 'pageImg4')" />
+</div>
+<div class="upload-btn-wrapper">
+  <button type="button" ><img src="data:image%pageImg5%" id="pageDsp5" width="150px" height=""/></button>
+  <input type="file" id="pageImg5" onchange="showprevImg('pageDsp5', 'pageImg5')" />
+</div>
+											  
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group row">
+                                            <label for="pGauth" class="col-sm-4 col-form-label">Authentication</label>
+                                            <div class="col-sm-8">
+                                            <div class="custom-control custom-checkbox checkbox-primary">
+                                                <input type="checkbox" class="custom-control-input" id="pGauth" name="pGauth" %auth%>
+                                                <label class="custom-control-label" for="pGauth">Check to enable</label>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+                                              <button type="button" onclick="updatePage('%pGId%','text')" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                </div>

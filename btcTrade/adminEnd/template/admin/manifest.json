@@ -1,0 +1,42 @@
+{
+"support": {
+        "pageTitle": "Customer Support Desk",
+        "pageDesc": "Manage customer request",
+        "pageAuth": "yes"
+    },
+"login": {
+        "pageTitle": "Login to Admin",
+        "pageDesc": "Login to Admin",
+        "pageAuth": "no"
+    },
+"finance": {
+        "pageTitle": "Finance Management",
+        "pageDesc": "Finance management portal",
+        "pageAuth": "yes"
+    },
+"developer": {
+        "pageTitle": "Website Developer portal",
+        "pageDesc": "Manage website statistics",
+        "pageAuth": "yes"
+    },
+"pinsetup": {
+        "pageTitle": "Setup Pin for your account",
+        "pageDesc": "Products in cart",
+        "pageAuth": "yes"
+    },
+"noauth": {
+        "pageTitle": "No auth",
+        "pageDesc": "Failed to locate auth configuration.",
+        "pageAuth": "no"
+    },
+"404": {
+        "pageTitle": "404 - Page not found",
+        "pageDesc": "Page not found.",
+        "pageAuth": "no"
+    },
+"noaccess": {
+        "pageTitle": "Access Denied",
+        "pageDesc": "Authentation required to access this resource.",
+        "pageAuth": "no"
+    }
+}

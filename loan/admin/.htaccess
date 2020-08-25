@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^(\w+)$ ./index.php?page=$1
+
+ErrorDocument 404 http://localhost/resturant/admin/404

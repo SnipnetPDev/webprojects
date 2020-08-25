@@ -1,0 +1,10 @@
+{
+        "name": "LoanUI - LMS",
+        "description": "LoanUI - LMS PHP Script by Snipnetworks",
+        "tempFolder": "template/",
+        "license": "MIT",
+        "author": {
+		        "name": "Snipnet Technologies",
+				"email": "snipnettech@gmail.com"
+				}
+}

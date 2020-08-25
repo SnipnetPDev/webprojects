@@ -1,0 +1,52 @@
+{
+"en": {
+        "pageTitle": "Bitcoin Trading PHP Script",
+        "pageDesc": "Bitcoin Trading PHP Script by Snipnetworks",
+        "pageAuth": "no"
+    },
+"login": {
+        "pageTitle": "Login to account",
+        "pageDesc": "Login to account",
+        "pageAuth": "no"
+    },
+"account": {
+        "pageTitle": "My Account",
+        "pageDesc": "Edit Account Info",
+        "pageAuth": "yes"
+    },
+"howtoinvest": {
+        "pageTitle": "How to Invest",
+        "pageDesc": "How to Invest",
+        "pageAuth": "no"
+    },
+"console": {
+        "pageTitle": "Trade Console",
+        "pageDesc": "Trade Console",
+        "pageAuth": "yes"
+    },
+"support": {
+        "pageTitle": "We're here to help",
+        "pageDesc": "Get the support you need",
+        "pageAuth": "no"
+    },
+"noauth": {
+        "pageTitle": "No auth",
+        "pageDesc": "Failed to locate auth configuration.",
+        "pageAuth": "no"
+    },
+"404": {
+        "pageTitle": "404 - Page not found",
+        "pageDesc": "Page not found.",
+        "pageAuth": "no"
+    },
+"pinsetup": {
+        "pageTitle": "Setup Pin for your account",
+        "pageDesc": "Account Security",
+        "pageAuth": "yes"
+    },
+"noaccess": {
+        "pageTitle": "Access Denied",
+        "pageDesc": "Authentation required to access this resource.",
+        "pageAuth": "no"
+    }
+}

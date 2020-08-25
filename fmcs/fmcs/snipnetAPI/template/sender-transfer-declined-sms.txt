@@ -1,0 +1,1 @@
+You money transfer to %receiver_name% was declined. ID# TX%transaction_id% CR: %currency%%amount_sent%

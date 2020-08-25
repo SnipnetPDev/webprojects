@@ -1,0 +1,1 @@
+You money transfer of CR: %currency%%amount_sent% to %receiver_name%, with ID# TX%transaction_id% has been placed on hold, pending manual review.

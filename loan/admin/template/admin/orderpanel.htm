@@ -1,0 +1,150 @@
+<style>
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btns {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+</style>
+ <div class="col-sm">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Request Date</label>
+                                            <div class="col-sm-8">
+                                                %transDate%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Name / Company Name</label>
+                                            <div class="col-sm-8">
+                                                %name% / %cname%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Mobile Number / Email</label>
+                                            <div class="col-sm-8">
+                                                %email% / %mobile%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="shortDesc" class="col-sm-4 col-form-label">Amount / Loan Type</label>
+                                            <div class="col-sm-8">
+                                               %amount% / %loanProd%
+                                            </div>
+                                        </div>
+										<div class="form-group row">
+                                            <label for="fullDesc" class="col-sm-4 col-form-label">Address</label>
+                                            <div class="col-sm-8">
+                                              %address%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="shortDesc" class="col-sm-4 col-form-label">Loan Term / Loan Purpose</label>
+                                            <div class="col-sm-8">
+                                               %loanTerm% Months / %loanPurpose%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="fullDesc" class="col-sm-4 col-form-label">Additional Message</label>
+                                            <div class="col-sm-8">
+                                              %Additionalnote%
+                                            </div>
+                                        </div>
+										<hr/>
+                                        <div class="" id="files%trId%"  onclick="loadFiles('%trId%')">
+										<a href="javascript:void();"><i class="fa fa-link"></i> List Attachments</a>
+                                        </div>
+										<hr/>
+                                        <div class="form-group row mb-0">
+                                            <div class="col-sm-10">
+											<!--
+                                                <button type="button" onclick="approveDeposit('%trId%')" class="btn btn-success">Approve</button>
+												<button type="button" onclick="approveDeposit('%trId%')" class="btn btn-danger">Decline</button> -->
+												 <div class="upload-btn-wrapper">
+  <a id="submit-btn" href=""><i class="fa fa-file"></i> Send Document</a>
+  <input type="file" id="userUpldFile%trId%" onchange="uploadFiles('userUpldFile%trId%', '%trId%', '%mobile%', '%name%')" />
+  </div>
+    <div class="upload-btn-wrapper">
+  |
+  </div>
+  <div class="upload-btn-wrapper">
+  <a style="color:green;" id="submit-btn" href="javascript:void();" onclick="updatePanel()"><i class="fa fa-cog"></i> Update Status</a>
+  </div>
+   <div class="upload-btn-wrapper">
+  |
+  </div>
+  <div class="upload-btn-wrapper">
+  <a style="color:red;" id="submit-btn" href="javascript:void();" onclick="deletePanel()"><i class="fa fa-trash"></i> Delete</a>
+  </div>
+  <br/>
+<span id="err%trId%"></span>
+<span id="updatePanel" style="display:none;">
+<hr/>
+<p><i class="fa fa-cog"></i> Update request status</p>
+<div class="custom-control">
+<input id="Approve" name="loanStatus" class="custom-control-input" value="Approved" type="radio" onclick="approveReqPanel()">
+<label class="custom-control-label" for="Approve">Approve</label>
+</div>
+ <div class="custom-control">
+<input id="Decline" name="loanStatus" class="custom-control-input danger" value="Declined" type="radio" onclick="declineReqPanel()">
+<label class="custom-control-label" for="Decline">Decline</label>
+</div>
+
+
+<span id="approveReqPanel" style="display:none;">
+<hr/>
+<div class='alert alert-info' role='alert'>
+<div class="upload-btn-wrapper">
+<a href="javascript:void();" id="submit-btn-sm" type="button" onclick="approveReq('%trId%')">Approve</a>
+</div>
+<div class="upload-btn-wrapper">
+  |
+  </div>
+<div class="upload-btn-wrapper">
+  <a id="submit-btn-sm" href="javascript:void();"> Approve with docuemnt</a>
+  <input type="file" id="approvalFile%trId%" onchange="approveReqDoc('approvalFile%trId%', '%trId%')" />
+  </div>
+</div>
+
+
+</span>
+
+<span id="declineReqPanel" style="display:none;">
+<hr/>
+<div class='alert alert-warning' role='alert'><i class='fa fa-exclamation-triangle'></i> This action cannot be undone, this request will be marked as declined and your client will be informed on this update.
+<br/><br/>
+<button id="submit-btn-sm" type="button" onclick="declineReq('%trId%')" class="btn btn-danger">Yes, Decline</button></div>
+
+
+</span>
+</span>
+
+<span id="deletePanel" style="display:none;">
+<hr/>
+<div class='alert alert-warning' role='alert'><i class='fa fa-exclamation-triangle'></i> This action cannot be undone, request and other user datas will be lost
+<br/><br/>
+<button id="submit-btn-sm" type="button" onclick="deleteReq('%trId%')" class="btn btn-warning">Yes, Delete</button></div>
+
+
+</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>

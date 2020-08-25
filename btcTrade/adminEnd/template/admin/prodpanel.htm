@@ -1,0 +1,102 @@
+ <div class="col-sm">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Transaction Date</label>
+                                            <div class="col-sm-8">
+                                                %transDate%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Name / Mobile Number</label>
+                                            <div class="col-sm-8">
+                                                %name%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="shortDesc" class="col-sm-4 col-form-label">Amount</label>
+                                            <div class="col-sm-8">
+                                               %amount% USD
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="shortDesc" class="col-sm-4 col-form-label">Profit</label>
+                                            <div class="col-sm-8">
+                                               %profit% USD
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="fullDesc" class="col-sm-4 col-form-label">Paument ID</label>
+                                            <div class="col-sm-8">
+                                              000000%trId%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="fullDesc" class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-3">
+                                             Duration: %duration%
+                                            </div>
+                                            <div class="col-sm-5">
+                                             Status: <span class="badge badge-%css%">%status%</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mb-0">
+                                            <div class="col-sm-10">
+											<br/>
+                                                <button type="button" onclick="modTrade('%trId%', 'pause')" class="btn btn-danger"><i class="fa fa-pause"></i> Pause</button> 
+												<button type="button" onclick="modTrade('%trId%', 'resume')" class="btn btn-info"><i class="fa fa-play"></i> Resume</button>
+												&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+ <input type="text" style="width:80px;" id="newProfit" value="%profit%">
+												<button type="button" onclick="updateProfit('%trId%')" class="btn btn-primary">Update Profit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+								
+<script>
+function modTrade(modId, modProtocol)
+  {
+$.ajax({
+   url: appFile+'admin'+appExtn,
+   method:"POST",
+   data:{modId:modId,modProtocol:modProtocol},
+		beforeSend : function(req) {
+        req.setRequestHeader('Authorization', token);
+        },
+   success:function(data)
+   {
+	   if(data == 0){
+		   closeWorksheet();
+	   }else{
+	       $('#worksheet_report').html(data);
+	   }
+   }
+});
+		
+  }
+  
+function updateProfit(tradeId)
+  {
+  var newProfit = $("#newProfit").val();
+$.ajax({
+   url: appFile+'admin'+appExtn,
+   method:"POST",
+   data:{tradeId:tradeId,newProfit:newProfit},
+		beforeSend : function(req) {
+        req.setRequestHeader('Authorization', token);
+        },
+   success:function(data)
+   {
+	   if(data == 0){
+		   closeWorksheet();
+	   }else{
+	       $('#worksheet_report').html(data);
+	   }
+   }
+});
+		
+  }
+</script>

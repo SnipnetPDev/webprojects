@@ -1,0 +1,37 @@
+<style>
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btns {
+  border: 0px solid white;
+  color: white;
+  background-color: white;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+</style>
+<div class="card">
+ <div class="card-header d-flex justify-content-between activestate" id="worksheet_header">
+<a role="button" data-toggle="collapse" href="#collapse_1" aria-expanded="true"><i class="zmdi zmdi-collection-item font-30"></i></a>
+<a role="button" onclick="closeWorksheet()" ><i class="zmdi zmdi-close font-30"></i></a>
+</div>
+<div id="collapse_1" class="collapse show" data-parent="#accordion_1" role="tabpanel">
+<div class="card-body pa-15"  id="worksheet_body"> 
+<p>Workspace by Snipnet Technologies</p>
+</div>
+<center><span id="worksheet_report"></span></center>
+</div>
+</div>
+ <!-- Toggles JavaScript -->
+    <script src="core/js/custom/admin.js"></script>
+    <script src="vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="dist/js/toggle-data.js"></script>

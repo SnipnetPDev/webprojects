@@ -1,0 +1,10 @@
+{
+        "name": "Bitcoin Trading PHP Script",
+        "description": "Bitcoin Trading PHP Script by Snipnetworks",
+        "tempFolder": "template/",
+        "license": "MIT",
+        "author": {
+		        "name": "Snipnet Technologies",
+				"email": "snipnettech@gmail.com"
+				}
+}

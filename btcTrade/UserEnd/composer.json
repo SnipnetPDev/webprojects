@@ -1,0 +1,27 @@
+{
+    "name": "build/php",
+    "description": "Build PHP Framework for developers",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "class/"
+        }
+    },
+    "require": {
+        "jenssegers/agent": "^2.6",
+        "mpdf/mpdf": "^8.0",
+        "banujan6/csrf-handler": "^2.0",
+        "yogeshkoli/user-ip": "^1.0",
+        "spatie/ssl-certificate": "^1.17",
+        "africastalking/africastalking": "^2.3",
+        "qbills/qbills-php": "^1.1",
+        "coinpaymentsnet/coinpayments-php": "^1.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Snipnet Technologies",
+            "email": "contact@snipnetworks.com"
+        }
+    ]
+}

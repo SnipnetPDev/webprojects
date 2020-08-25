@@ -1,0 +1,56 @@
+ <div class="col-sm">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Transaction Date</label>
+                                            <div class="col-sm-8">
+                                                %transDate%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="title" class="col-sm-4 col-form-label">Name / Mobile Number</label>
+                                            <div class="col-sm-8">
+                                                %name%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="shortDesc" class="col-sm-4 col-form-label">Amount (USD / BTC)</label>
+                                            <div class="col-sm-8">
+                                               %amount%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="fullDesc" class="col-sm-4 col-form-label">Paument ID</label>
+                                            <div class="col-sm-8">
+                                              %transId%
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mb-0">
+                                            <div class="col-sm-10">
+                                                <button type="button" onclick="approveDeposit('%trId%')" class="btn btn-primary">Approve payment</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+								
+<script>
+function approveDeposit(trId)
+  {
+$.ajax({
+   url: appFile+'admin'+appExtn,
+   method:"POST",
+   data:{trId:trId},
+		beforeSend : function(req) {
+        req.setRequestHeader('Authorization', token);
+        },
+   success:function(data)
+   {
+	   if(data == 0){
+		   closeWorksheet();
+	   }else{
+	       $('#worksheet_report').html(data);
+	   }
+   }
+});
+		
+  }
+</script>

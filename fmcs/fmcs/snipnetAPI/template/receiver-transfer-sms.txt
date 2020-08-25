@@ -1,0 +1,1 @@
+You have received a payment from %sender_name%. ID# TX%transaction_id%	CR: %currency%%amount_sent% %b_url%/index.php

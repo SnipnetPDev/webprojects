@@ -1,0 +1,27 @@
+{
+"index": {
+        "pageTitle": "Welcome to Build Framework",
+        "pageDesc": "An open source for PHP developers",
+        "pageAuth": "no"
+    },
+"features": {
+        "pageTitle": "Build Features",
+        "pageDesc": "An open source for PHP developers",
+        "pageAuth": "no"
+    },
+"noauth": {
+        "pageTitle": "No auth",
+        "pageDesc": "Failed to locate auth configuration.",
+        "pageAuth": "no"
+    },
+"404": {
+        "pageTitle": "404 - Page not found",
+        "pageDesc": "Page not found.",
+        "pageAuth": "no"
+    },
+"noaccess": {
+        "pageTitle": "Access Denied",
+        "pageDesc": "Authentation required to access this resource.",
+        "pageAuth": "no"
+    }
+}

@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello2efa.eot?6793015');
+  src: url('../fonts/fontello2efa.eot?6793015#iefix') format('embedded-opentype'),
+       url('../fonts/fontello2efa.html?6793015') format('woff2'),
+       url('../fonts/fontello2efa.woff?6793015') format('woff'),
+       url('../fonts/fontello2efa.ttf?6793015') format('truetype'),
+       url('../fonts/fontello2efa.svg?6793015#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?6793015#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+ 
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-notepad:before { content: '\e800'; } /* '' */
+.icon-clock:before { content: '\e801'; } /* '' */
+.icon-bank:before { content: '\e802'; } /* '' */
+.icon-back-7:before { content: '\e804'; } /* '' */
+.icon-next-10:before { content: '\e805'; } /* '' */
+.icon-check:before { content: '\e806'; } /* '' */
+.icon-house:before { content: '\e807'; } /* '' */
+.icon-car:before { content: '\e808'; } /* '' */
+.icon-money-bag:before { content: '\e809'; } /* '' */
+.icon-placeholder:before { content: '\e80a'; } /* '' */
+.icon-007-invoice-1:before { content: '\e80b'; } /* '' */
+.icon-008-search-1:before { content: '\e80c'; } /* '' */
+.icon-009-search:before { content: '\e80d'; } /* '' */
+.icon-010-job-search:before { content: '\e80e'; } /* '' */
+.icon-011-safebox-1:before { content: '\e80f'; } /* '' */
+.icon-012-safebox:before { content: '\e810'; } /* '' */
+.icon-013-presentation:before { content: '\e811'; } /* '' */
+.icon-014-lecture:before { content: '\e812'; } /* '' */
+.icon-015-piggy-bank-1:before { content: '\e813'; } /* '' */
+.icon-016-piggy-bank:before { content: '\e814'; } /* '' */
+.icon-017-monitor:before { content: '\e815'; } /* '' */
+.icon-018-network:before { content: '\e816'; } /* '' */
+.icon-019-eye:before { content: '\e817'; } /* '' */
+.icon-020-briefcase-2:before { content: '\e818'; } /* '' */
+.icon-021-money-bag:before { content: '\e819'; } /* '' */
+.icon-022-invoice:before { content: '\e81a'; } /* '' */
+.icon-023-investment:before { content: '\e81b'; } /* '' */
+.icon-024-shield-1:before { content: '\e81c'; } /* '' */
+.icon-025-shield:before { content: '\e81d'; } /* '' */
+.icon-026-idea:before { content: '\e81e'; } /* '' */
+.icon-027-id-card:before { content: '\e81f'; } /* '' */
+.icon-028-diamond-1:before { content: '\e820'; } /* '' */
+.icon-029-deal:before { content: '\e821'; } /* '' */
+.icon-030-gold-ingots:before { content: '\e822'; } /* '' */
+.icon-031-get-money:before { content: '\e823'; } /* '' */
+.icon-032-diamond:before { content: '\e824'; } /* '' */
+.icon-033-agenda-1:before { content: '\e825'; } /* '' */
+.icon-034-agenda:before { content: '\e826'; } /* '' */
+.icon-035-check-list:before { content: '\e827'; } /* '' */
+.icon-036-briefcase-1:before { content: '\e828'; } /* '' */
+.icon-037-briefcase:before { content: '\e829'; } /* '' */
+.icon-038-credit-card-2:before { content: '\e82a'; } /* '' */
+.icon-039-calculator-1:before { content: '\e82b'; } /* '' */
+.icon-040-calculator:before { content: '\e82c'; } /* '' */
+.icon-041-business-cards:before { content: '\e82d'; } /* '' */
+.icon-042-newspaper:before { content: '\e82e'; } /* '' */
+.icon-043-bank:before { content: '\e82f'; } /* '' */
+.icon-044-credit-card-1:before { content: '\e830'; } /* '' */
+.icon-045-credit-card:before { content: '\e831'; } /* '' */
+.icon-046-balance-1:before { content: '\e832'; } /* '' */
+.icon-047-balance:before { content: '\e833'; } /* '' */
+.icon-048-auction:before { content: '\e834'; } /* '' */
+.icon-049-advertising-1:before { content: '\e835'; } /* '' */
+.icon-050-advertising:before { content: '\e836'; } /* '' */
+.icon-001-time-is-money:before { content: '\e837'; } /* '' */
+.icon-002-target-1:before { content: '\e838'; } /* '' */
+.icon-003-target:before { content: '\e839'; } /* '' */
+.icon-004-strategy-1:before { content: '\e83a'; } /* '' */
+.icon-005-strategy:before { content: '\e83b'; } /* '' */
+.icon-006-contract:before { content: '\e83c'; } /* '' */

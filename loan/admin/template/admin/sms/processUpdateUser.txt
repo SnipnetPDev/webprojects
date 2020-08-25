@@ -1,0 +1,1 @@
+HI %userName%, you have received a document, kindly login using the %siteName% mobile app to review your loan status

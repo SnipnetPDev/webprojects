@@ -1,0 +1,19 @@
+<div style="display:none;" id="%appId%">
+<div class="modal-header bg-default">
+<span style="font-size:30px;">$%amount%</span>
+<span style="font-size:30px;"><button class="btn btn-sm btn-outline-%color% px-2 mr-2 mb-2 active" type="button">%loanStatus%</button></span>
+</div>
+<div class="modal-body">
+Avaliable actions<hr/>
+ <div class="upload-btn-wrapper" style="display:%display%;">
+  <button ype="submit"  id="submit-btn" class="btn btn-outline-default btn-44 shadow-sm"><i class="material-icons">description</i></button>
+  <input type="file" id="userUpldFile%appId%" onchange="uploadFiles('userUpldFile%appId%', '%appId%')" />
+  </div>
+ <hr/>
+ <span id="err%appId%"></span><br/>
+<span id="files%appId%"></span>
+
+ <hr/>
+<a href="#" onclick="hideLoanView('%appId%')" style="color:blue;">Close</a>
+</div>   
+</div>

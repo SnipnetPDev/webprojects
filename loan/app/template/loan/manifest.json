@@ -1,0 +1,57 @@
+{
+"index": {
+        "pageTitle": "LoanUI : Loan Management Sysyem",
+        "pageDesc": "Loan Management Sysyem PHP Script by Snipnetworks",
+        "pageAuth": "yes"
+    },
+"login": {
+        "pageTitle": "Login to account",
+        "pageDesc": "Login to account",
+        "pageAuth": "no"
+    },
+"apply": {
+        "pageTitle": "Apply now",
+        "pageDesc": "Apply for a loan",
+        "pageAuth": "yes"
+    },
+"resetPin": {
+        "pageTitle": "Reset account pin",
+        "pageDesc": "Login to account",
+        "pageAuth": "no"
+    },
+"changePin": {
+        "pageTitle": "Change account pin",
+        "pageDesc": "Change account pin",
+        "pageAuth": "yes"
+    },
+"account": {
+        "pageTitle": "Account settings",
+        "pageDesc": "Account settings",
+        "pageAuth": "yes"
+    },
+"notification": {
+        "pageTitle": "Notifications",
+        "pageDesc": "Account Notifications",
+        "pageAuth": "yes"
+    },
+"noauth": {
+        "pageTitle": "No auth",
+        "pageDesc": "Failed to locate auth configuration.",
+        "pageAuth": "no"
+    },
+"404": {
+        "pageTitle": "404 - Page not found",
+        "pageDesc": "Page not found.",
+        "pageAuth": "no"
+    },
+"pinsetup": {
+        "pageTitle": "Setup Pin for your account",
+        "pageDesc": "Account Security",
+        "pageAuth": "yes"
+    },
+"noaccess": {
+        "pageTitle": "Access Denied",
+        "pageDesc": "Authentation required to access this resource.",
+        "pageAuth": "no"
+    }
+}
